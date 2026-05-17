@@ -2,6 +2,28 @@
 
 A turn-based dungeon crawler roguelike game written entirely in [OpenLatinum](https://github.com/awdemos/OpenLatinium)!
 
+## Screenshot
+
+```
++========================================================+
+|                                                        |
+|           LATINIUM ROGUELIKE                           |
+|                                                        |
++========================================================+
+
++----------------------------------------+
+|           PUGNA!                       |
++----------------------------------------+
+Goblinus appropinquat! PV: 2
+
+Tuus PV: 8 | Goblinus PV: 2
+
+Quid facis? (a=oppugnare, f=fugere)
+> a
+Percussisti goblinum! Dammum: 2
+Goblinus mortuus est! XP +10
+```
+
 ## Story
 
 You are a bold explorer who fell asleep in a dark underground cave. Now you wake up! Goblins surround you. There is only one staircase to freedom. Find it!
@@ -98,28 +120,6 @@ This demo showcases OpenLatinum language features:
 - `roguelike.vms` - Compiled bytecode
 - `demo.sh` - Demo script
 - `README.md` - This file
-
-## Screenshot
-
-```
-+========================================================+
-|                                                        |
-|           LATINIUM ROGUELIKE                           |
-|                                                        |
-+========================================================+
-
-+----------------------------------------+
-|           PUGNA!                       |
-+----------------------------------------+
-Goblinus appropinquat! PV: 2
-
-Tuus PV: 8 | Goblinus PV: 2
-
-Quid facis? (a=oppugnare, f=fugere)
-> a
-Percussisti goblinum! Dammum: 2
-Goblinus mortuus est! XP +10
-```
 
 ## License
 
