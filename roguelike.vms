@@ -1385,15 +1385,15 @@ showintro:
 PUSHN 1
 PUSHS "\n"
 WRITES
-PUSHS "+========================================================+\n"
+PUSHS "+----------------------------------------+\n"
 WRITES
-PUSHS "|                                                        |\n"
+PUSHS "|                                        |\n"
 WRITES
-PUSHS "|           LATINIUM ROGUELIKE                           |\n"
+PUSHS "|        LATINIUM ROGUELIKE              |\n"
 WRITES
-PUSHS "|                                                        |\n"
+PUSHS "|                                        |\n"
 WRITES
-PUSHS "+========================================================+\n"
+PUSHS "+----------------------------------------+\n"
 WRITES
 PUSHS "\n"
 WRITES

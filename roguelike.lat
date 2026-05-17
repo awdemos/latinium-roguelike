@@ -143,11 +143,11 @@ munus draw_hp_bar() {
 
 munus show_intro() {
     print("\n")
-    print("+========================================================+\n")
-    print("|                                                        |\n")
-    print("|           LATINIUM ROGUELIKE                           |\n")
-    print("|                                                        |\n")
-    print("+========================================================+\n")
+    print("+----------------------------------------+\n")
+    print("|                                        |\n")
+    print("|        LATINIUM ROGUELIKE              |\n")
+    print("|                                        |\n")
+    print("+----------------------------------------+\n")
     print("\n")
     print("Fabula:\n")
     print("Tu es explorator audax. In antro obscuro sub terra\n")
