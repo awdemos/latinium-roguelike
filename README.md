@@ -5,28 +5,32 @@ A turn-based dungeon crawler roguelike game written entirely in [OpenLatinum](ht
 ## Screenshot
 
 ```
-+----------------------------------------+
-|                                        |
-|        LATINIUM ROGUELIKE              |
-|                                        |
-+----------------------------------------+
+=== LATINIUM ROGUELIKE ===
+Inveni scalas (>). Vita goblinos (g).
+Pocula (!) te sanant.
 
-Fabula:
-Tu es explorator audax. In antro obscuro sub terra
-dormivisti. Nunc evigilas! Goblini te circumdant.
-Scala una ad libertatem ducit. Inveni eam!
++------------+
+|############|
+|############|
+|##....##...#|
+|##.@.......#|
+|##.....#...#|
+|#####....###|
+|#####....###|
+|############|
++------------+
 
-+----------------------------------------+
-|           PUGNA!                       |
-+----------------------------------------+
-Goblinus appropinquat! PV: 2
+PV: 10 / 10  |  XP: 0  |  Versus: 0
+[##########]
 
-Tuus PV: 8 | Goblinus PV: 2
+Signa:  @=ludator  g=goblin  !=poculum  >=scalae
+        .=solum    #=paries
 
-Quid facis? (a=oppugnare, f=fugere)
-> a
-Percussisti goblinum! Dammum: 2
-Goblinus mortuus est! XP +10
+Imperia: n=septentrio  s=meridies  e=oriens  w=occidens
+         k=supra      j=infra     l=dextra  h=sinistra
+         q=desinere
+
+> l
 ```
 
 ## Story
