@@ -5,11 +5,16 @@ A turn-based dungeon crawler roguelike game written entirely in [OpenLatinum](ht
 ## Screenshot
 
 ```
-+========================================================+
-|                                                        |
-|           LATINIUM ROGUELIKE                           |
-|                                                        |
-+========================================================+
++----------------------------------------+
+|                                        |
+|        LATINIUM ROGUELIKE              |
+|                                        |
++----------------------------------------+
+
+Fabula:
+Tu es explorator audax. In antro obscuro sub terra
+dormivisti. Nunc evigilas! Goblini te circumdant.
+Scala una ad libertatem ducit. Inveni eam!
 
 +----------------------------------------+
 |           PUGNA!                       |
