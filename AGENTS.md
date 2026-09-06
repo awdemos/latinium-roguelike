@@ -1,26 +1,78 @@
-# latinium-roguelike
+# Agent Notes: latinium-roguelike
 
-## Deployment
+A turn-based dungeon-crawler roguelike written in OpenLatinum (a Latin-themed programming language). The game runs in a custom C VM and features a fully Latin UI.
 
-No Dagger module or recognized deployment configuration was found.
+## Repository Layout
 
-General redeploy process:
+- `roguelike.lat` — Source code for the game in OpenLatinum.
+- `roguelike.vms` — Precompiled VM bytecode (build artifact).
+- `demo.sh` — Automated demo script that plays through a short sequence.
+- `README.md` — Game rules, controls, and build instructions.
 
-1. Commit and push changes to the default branch.
-2. Trigger the relevant CI/CD pipeline or run the documented deploy command.
-3. If the project is served via GitHub Pages, the site redeploys automatically after the push.
+## Prerequisites
 
+Install the OpenLatinum compiler and build the C VM:
 
-## Setup commands
-- Install the OpenLatinum compiler: `pip install -e /path/to/OpenLatinium`
-- Compile the game: `lat build roguelike.lat -o roguelike.vms --ast`
-- Run the compiled game: `/tmp/vms/vms/vms roguelike.vms`
-- Or run with the Python VM: `python /path/to/OpenLatinium/lat/vm_interpreter.py roguelike.vms`
-- Run the automated demo: `./demo.sh`
+```bash
+git clone https://github.com/awdemos/OpenLatinium.git
+cd OpenLatinium
+pip install -e .
 
-## Code style
-- OpenLatinum language syntax (Latin-inspired keywords)
-- Static typing: declare types explicitly (`integer`, `filum`, `vec<...>`)
-- Use snake_case for variable and function names
-- Use Latin identifiers where idiomatic (`gover` for game over, `pv` for hit points)
-- Keep `main()` as the entry point and split logic into small functions
+unzip vms-source.zip -d /tmp/vms
+cd /tmp/vms/vms
+make
+```
+
+The VM binary will be at `/tmp/vms/vms/vms`.
+
+## Build and Run
+
+```bash
+# Compile
+cd latinium-roguelike
+lat build roguelike.lat -o roguelike.vms
+
+# Run with the C VM
+/tmp/vms/vms/vms roguelike.vms
+
+# Or use the OpenLatinum convenience command
+lat run roguelike.lat
+```
+
+## Automated Demo
+
+```bash
+./demo.sh
+```
+
+## Controls
+
+Movement:
+- `n`/`k` — North (up)
+- `s`/`j` — South (down)
+- `e`/`l` — East (right)
+- `w`/`h` — West (left)
+
+Combat:
+- `a` — Attack
+- `f` — Flee
+
+General:
+- `q` — Quit
+- Enter — Redraw screen
+
+## Key Conventions
+
+- The game logic, strings, and UI are in Latin.
+- Do not edit `roguelike.vms` directly; regenerate it from `roguelike.lat`.
+- `demo.sh` expects the OpenLatinum compiler and VM binary to already be installed.
+
+## Common Issues
+
+- **`lat: command not found`**: install the OpenLatinum compiler (`pip install -e /path/to/OpenLatinium`).
+- **VM binary missing**: unzip and build the C VM source from `vms-source.zip`.
+- **Latin source errors**: OpenLatinum is still evolving; check `OpenLatinium` docs for current syntax.
+
+## License
+
+See `LICENSE`.
